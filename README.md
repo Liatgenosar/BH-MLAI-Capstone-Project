@@ -55,16 +55,23 @@ Summary of Results
 2. Comparison for modeling men and women data
 3. Comparing Coefs importance between models, and on the men-women modeling results.
 
-Results: Table summarizing all models result.
+mse, Accuracy, Recall Score, Confusion Matrix for the models tried:
+--------------------------------------------------------------------
+                      				
+Logistic Regression GridSearchCV -	mse: 0.148113;	Train Accuracy: 0.857143;	Test Accuracy: 0.851887	;
+                Recall Score: 0.080745	   ;  TN,  FP,  FN, TP :  [890,  9, 148, 13]
 
-                                                Train       Test
-                                    mse	        Accuracy	Accuracy	Recall Score	TN,  FP,  FN, TP
-Model					
-Logistic Regression GridSearchCV	0.148113	0.857143	0.851887	0.080745	    [890,  9, 148, 13]
-SVM GridSearchCV	                0.838679	0.158905	0.161321	0.900621	    [26,  873, 16, 145]
-KNN GridSearchCV	                0.223585	1.000000	0.776415	0.198758	    [791, 108, 129, 32]
-Decision Tree GridSearchCV	        0.157547	0.856514	0.842453	0.055901	    [884, 15,  152, 9]
-Random Forest	                    0.151887	1.000000	0.848113	0.062112	    [889, 10,  151, 10]
+SVM GridSearchCV -	   mse: 0.838679	Train Accuracy: 0.158905	Test Accuracy: 0.161321	
+                Recall Score: 0.900621	;    TN,  FP,  FN, TP : [26,  873, 16, 145]
+
+KNN GridSearchCV -	   mse: 0.223585 ;	Train Accuracy: 1.000000 ;	Test Accuracy: 0.776415	;
+                Recall Score: 0.198758;	   TN,  FP,  FN, TP : [791, 108, 129, 32]
+
+Decision Tree GridSearchCV -  mse: 0.157547 ;	Train Accuracy: 0.856514 ;	Test Accuracy: 0.842453	; 
+                Recall Score: 0.055901 ;	  TN,  FP,  FN, TP : [884, 15,  152, 9]
+
+Random Forest -         mse: 0.151887 ;	Train Accuracy: 1.000000 ;	Test Accuracy: 0.848113 ;	
+                Recall Score: 0.062112 ;	  TN,  FP,  FN, TP : [889, 10,  151, 10]
 
 
 Summary and Findings
