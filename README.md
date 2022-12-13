@@ -55,6 +55,18 @@ Summary of Results
 2. Comparison for modeling men and women data
 3. Comparing Coefs importance between models, and on the men-women modeling results.
 
+Results: Table summarizing all models result.
+
+                                                Train       Test
+                                    mse	        Accuracy	Accuracy	Recall Score	TN,  FP,  FN, TP
+Model					
+Logistic Regression GridSearchCV	0.148113	0.857143	0.851887	0.080745	    [890,  9, 148, 13]
+SVM GridSearchCV	                0.838679	0.158905	0.161321	0.900621	    [26,  873, 16, 145]
+KNN GridSearchCV	                0.223585	1.000000	0.776415	0.198758	    [791, 108, 129, 32]
+Decision Tree GridSearchCV	        0.157547	0.856514	0.842453	0.055901	    [884, 15,  152, 9]
+Random Forest	                    0.151887	1.000000	0.848113	0.062112	    [889, 10,  151, 10]
+
+
 Summary and Findings
 1.SVM model did the best in predicting maximum true positive patients with the minimum false negatives, thus having the best recall score of 90.06%. This came with a low test accuracy of 16.13%. KNN model came second with a recall score of 19.88.
 2. Best test accuracy score was achieved by the Logistic Regression model, 85.19%, which is only by little better than the dummy classifier. This can be explained by a relatively weak correlation between each of the dataset's 15 features and the target.
