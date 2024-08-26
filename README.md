@@ -1,6 +1,6 @@
 # BH-MLAI-Capstone-Project
 
-Modeling And Data Analytics for the Prediction of Heart Disease Incidence using the Framingham Study Dataset.
+Modeling And Data Analytics for the Prediction of Heart Disease Incidence using the Framingham Heart Study Dataset.
 By: Liat Genosar Roth, liat.gr@gmail.com
 
 Jupiter Notebook: Capstone_project_liat.ipynb
@@ -14,7 +14,7 @@ DATA INSPECTION
 3. Few columns have missing values.
 
 EDA
-1. Ratio of target values in the dataset, and Amon men/women. Target: TenYearCHD.
+1. Ratio of target values in the dataset, and Among men/women. Target: TenYearCHD.
 2. Looking for correlations with the target column
 3. Cross-tab gender and TenYearCHD: The chances of men to have heart disease within 10 years are 7% more than the women’s.
 4. TenYearCHD by education level.
